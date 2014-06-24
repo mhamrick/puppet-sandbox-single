@@ -8,7 +8,7 @@ include other
 
 class { '::mysql::server':
   old_root_password => '',
-  root_password     => 'claspass',
+  root_password     => 'password',
   override_options  => { 'mysqld'  => { 'max_connections' => '101' } }
  }
   

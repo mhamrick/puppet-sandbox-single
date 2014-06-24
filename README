@@ -1,0 +1,6 @@
+This module was loosely based off of:
+https://github.com/jas0nkim/my-vagrant-puppet-lamp
+
+This setup requires that puppet and librarian-puppet-simple be installed. Vagrant and Virtualbox will also need to be installed.
+
+
