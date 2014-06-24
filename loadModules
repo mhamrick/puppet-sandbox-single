@@ -1,0 +1,4 @@
+/usr/local/bin/librarian-puppet clean
+/usr/local/bin/librarian-puppet install
+/bin/cp -r other modules
+/bin/cp -r bootstrap modules
