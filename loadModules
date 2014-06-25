@@ -1,4 +1,13 @@
-/usr/local/bin/librarian-puppet clean
-/usr/local/bin/librarian-puppet install
-/bin/cp -r other modules
-/bin/cp -r bootstrap modules
+export PATH=/bin/:/usr/bin:/usr/local/bin:$PATH
+if [ ! -d "modules" ]; then
+  mkdir modules
+fi
+
+if [ ! -d "one" ]; then
+  mkdir one
+fi
+ 
+librarian-puppet clean
+librarian-puppet install
+cp -r other modules
+cp -r bootstrap modules

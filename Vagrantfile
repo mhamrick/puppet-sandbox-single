@@ -17,4 +17,5 @@ Vagrant.configure("2") do |config|
 #  config.vm.forward_port 80, 8888
   config.vm.network "forwarded_port", guest: 80, host: 8888
   config.vm.synced_folder "html/", "/var/www/html"            
+  config.vm.synced_folder "one/", "/var/www/one"            
 end   
