@@ -6,6 +6,10 @@ fi
 if [ ! -d "one" ]; then
   mkdir one
 fi
+
+if [ ! -d "two" ]; then
+  mkdir two
+fi
  
 librarian-puppet clean
 librarian-puppet install

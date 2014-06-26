@@ -11,7 +11,21 @@ class { '::mysql::server':
   root_password     => 'password',
   override_options  => { 'mysqld'  => { 'max_connections' => '101' } }
  }
-  
+
+mysql::db { 'one':
+  user      => 'one',
+  password  => 'one',
+  host      => 'localhost',
+  grant     => ['SELECT', 'UPDATE','CREATE','DROP','DELETE','GRANT','ALTER'],
+}
+
+mysql::db { 'two':
+  user      => 'two',
+  password  => 'two',
+  host      => 'localhost',
+  grant     => ['SELECT', 'UPDATE','CREATE','DROP','DELETE','GRANT','ALTER'],
+}
+ 
 class { 'apache':
  mpm_module => 'prefork', 
 }
